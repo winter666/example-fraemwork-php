@@ -1,0 +1,25 @@
+{
+    "name": "vendor/test_project",
+    "description": "test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Davut Sergeev",
+            "email": "sergeevdavut@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-mbstring": "*",
+        "ext-apache": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        },
+        "files": [
+            "app/core/functions.php",
+            "router/web.php"
+        ]
+    }
+}
